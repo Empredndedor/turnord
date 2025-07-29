@@ -43,14 +43,67 @@
   <div class="container">
     <h1 class="display-5 fw-bold">¿Tienes un negocio? TurnoRD es para ti</h1>
     <p class="lead">Simplifica la gestión de turnos, mejora la atención y gana más clientes</p>
-    <button class="btn btn-light btn-lg mt-3 btn-animado" data-bs-toggle="modal" data-bs-target="#registroModal">
-      Quiero TurnoRD para mi negocio
-    </button>
+
+   <button class="btn btn-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#registroModal">
+  Quiero TurnoRD para mi negocio
+</button>
+
   </div>
 </section>
 
 <!-- Modal de Registro -->
-<!-- (Sin cambios aquí, permanece igual) -->
+
+<!-- Modal de Registro -->
+<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <form id="formRegistroNegocio">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registroModalLabel">Registrar mi Negocio en TurnoRD</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nombreNegocio" class="form-label">Nombre del Negocio</label>
+              <input type="text" class="form-control" id="nombreNegocio" name="nombre" required />
+            </div>
+            <div class="col-md-6">
+              <label for="correoNegocio" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="correoNegocio" name="correo" required />
+            </div>
+            <div class="col-md-6">
+              <label for="telefonoNegocio" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefonoNegocio" name="telefono" required />
+            </div>
+            <div class="col-md-6">
+              <label for="tipoNegocio" class="form-label">Tipo de Negocio</label>
+              <select class="form-select" id="tipoNegocio" name="tipo" required>
+                <option value="">Selecciona</option>
+                <option>Barbería</option>
+                <option>Salón de Belleza</option>
+                <option>Centro de Uñas</option>
+                <option>Clínica</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="descripcionNegocio" class="form-label">Descripción / Servicios</label>
+              <textarea class="form-control" id="descripcionNegocio" name="descripcion" rows="3" required></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <span id="estadoRegistro" class="me-auto text-success"></span>
+          <button type="submit" class="btn btn-primary">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- (Sección de Beneficios) -->
 
 <!-- Ventajas -->
 <section class="py-5" data-aos="fade-up">
