@@ -12,13 +12,26 @@
   <!-- AOS Animate On Scroll -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Datos estructurados de Schema.org para el logo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TurnoRD",
+    "url": "https://turnord.net",
+    "logo": "https://turnord.net/assets/logo.jpeg"
+  }
+  </script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
   <!-- Header -->
   <header class="bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-4xl font-bold text-blue-600">TurnoRD</h1>
+      <a href="index.html">
+        <img src="assets/logo.jpeg" alt="Logo de TurnoRD" class="h-12">
+      </a>
       <nav>
         <a href="#beneficios" class="text-sm text-gray-700 hover:text-blue-600 mx-2">Beneficios</a>
         <a href="negocios-afiliados.html" class="text-sm text-gray-700 hover:text-blue-600 mx-2">Negocios Afiliados</a>
