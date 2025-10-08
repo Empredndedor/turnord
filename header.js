@@ -6,5 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     menuButton.addEventListener('click', function () {
       mobileMenu.classList.toggle('hidden');
     });
+
+    // Cierra el menú cuando se hace clic en un enlace
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+      });
+    });
   }
 });
