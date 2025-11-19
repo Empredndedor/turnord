@@ -78,39 +78,41 @@
         <h2 class="text-4xl font-extrabold text-gray-900">¿Cómo Funciona?</h2>
         <p class="mt-4 text-lg text-gray-600">En solo 3 simples pasos, tu negocio estará listo para el éxito.</p>
       </div>
-      <div class="flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 md:space-x-8">
+      <div class="relative flex flex-col md:flex-row justify-center items-center md:space-x-8">
+        <!-- Línea de Conexión Vertical (Solo para móvil) -->
+        <div class="absolute top-12 bottom-12 left-1/2 -ml-0.5 w-1 bg-gray-200 md:hidden"></div>
 
         <!-- Paso 1 -->
-        <div data-aos="fade-right" class="flex flex-col items-center text-center max-w-sm">
-          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-white shadow-lg mb-6 border-4 border-gray-200">
+        <div data-aos="fade-right" class="relative z-10 flex flex-col items-center text-center max-w-sm mb-12 md:mb-0">
+          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-gray-50 shadow-lg mb-6 border-4 border-gray-200">
             <span class="text-4xl font-bold text-blue-600">1</span>
           </div>
           <h3 class="text-2xl font-bold mb-3">Regístrate</h3>
-          <p class="text-gray-600">Crea tu cuenta de negocio en minutos. Es rápido, fácil y completamente gratis para empezar.</p>
+          <p class="text-gray-600 px-4 md:px-0">Crea tu cuenta de negocio en minutos. Es rápido, fácil y completamente gratis para empezar.</p>
         </div>
 
-        <!-- Conector -->
-        <div class="hidden md:block h-1 w-full bg-gray-200 rounded-full"></div>
+        <!-- Conector (Solo para desktop) -->
+        <div class="hidden md:block flex-grow h-1 bg-gray-200"></div>
 
         <!-- Paso 2 -->
-        <div data-aos="fade-up" class="flex flex-col items-center text-center max-w-sm">
-          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-white shadow-lg mb-6 border-4 border-gray-200">
+        <div data-aos="fade-up" class="relative z-10 flex flex-col items-center text-center max-w-sm mb-12 md:mb-0">
+          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-gray-50 shadow-lg mb-6 border-4 border-gray-200">
             <span class="text-4xl font-bold text-blue-600">2</span>
           </div>
           <h3 class="text-2xl font-bold mb-3">Configura</h3>
-          <p class="text-gray-600">Personaliza tus servicios, horarios y personal. TurnoRD se adapta a tus necesidades.</p>
+          <p class="text-gray-600 px-4 md:px-0">Personaliza tus servicios, horarios y personal. TurnoRD se adapta a tus necesidades.</p>
         </div>
 
-        <!-- Conector -->
-        <div class="hidden md:block h-1 w-full bg-gray-200 rounded-full"></div>
+        <!-- Conector (Solo para desktop) -->
+        <div class="hidden md:block flex-grow h-1 bg-gray-200"></div>
 
         <!-- Paso 3 -->
-        <div data-aos="fade-left" class="flex flex-col items-center text-center max-w-sm">
-          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-white shadow-lg mb-6 border-4 border-gray-200">
+        <div data-aos="fade-left" class="relative z-10 flex flex-col items-center text-center max-w-sm">
+          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-gray-50 shadow-lg mb-6 border-4 border-gray-200">
             <span class="text-4xl font-bold text-blue-600">3</span>
           </div>
           <h3 class="text-2xl font-bold mb-3">Comparte</h3>
-          <p class="text-gray-600">Comparte tu enlace de reserva con tus clientes y observa cómo tu agenda se llena sola. ¡Así de simple!</p>
+          <p class="text-gray-600 px-4 md:px-0">Comparte tu enlace de reserva con tus clientes y observa cómo tu agenda se llena sola. ¡Así de simple!</p>
         </div>
 
       </div>
@@ -137,7 +139,7 @@
 
         <!-- Beneficio 2: Mejora la Experiencia -->
         <div data-aos="fade-up" data-aos-delay="150" class="text-center p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-          <div class="flex items-center justify-center h-20 w-20 rounded-full bg-green-100 text-green-600 mx-auto mb-6">
+          <div class="flex items-center justify-center h-20 w-20 rounded-full bg-blue-100 text-blue-600 mx-auto mb-6">
             <i class="bi bi-emoji-smile text-4xl"></i>
           </div>
           <h3 class="text-2xl font-bold mb-3">Experiencia Superior</h3>
@@ -146,7 +148,7 @@
 
         <!-- Beneficio 3: Crece tu Negocio -->
         <div data-aos="fade-up" data-aos-delay="300" class="text-center p-8 bg-gray-50 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-          <div class="flex items-center justify-center h-20 w-20 rounded-full bg-purple-100 text-purple-600 mx-auto mb-6">
+          <div class="flex items-center justify-center h-20 w-20 rounded-full bg-blue-100 text-blue-600 mx-auto mb-6">
             <i class="bi bi-graph-up-arrow text-4xl"></i>
           </div>
           <h3 class="text-2xl font-bold mb-3">Analiza y Crece</h3>
