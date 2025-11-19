@@ -1,3 +1,4 @@
 node_modules/
 test-results/
 verification/
+server.log
