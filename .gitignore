@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 955a64a851754cfd9cb0ed0aea92efba7a812b3d
 node_modules/
 test-results/
 verification/
 server.log
+<<<<<<< HEAD
 =======
 # Archivos temporales
 
@@ -17,3 +21,5 @@ node_modules/
 .DS_Store
 Thumbs.db
 >>>>>>> e3a407f0b638aedd0978abf9184e93abb877671e
+=======
+>>>>>>> 955a64a851754cfd9cb0ed0aea92efba7a812b3d

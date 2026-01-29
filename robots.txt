@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://turnord.net/sitemap.xml

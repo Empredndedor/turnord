@@ -1,16 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.getElementById('menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
-
   if (menuButton && mobileMenu) {
-    menuButton.addEventListener('click', function () {
+    menuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-
-    // Cierra el menú cuando se hace clic en un enlace
-    const menuLinks = mobileMenu.querySelectorAll('a');
-    menuLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
+    const links = mobileMenu.querySelectorAll('a');
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
       });
     });

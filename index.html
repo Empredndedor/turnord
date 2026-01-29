@@ -1,62 +1,50 @@
-<<<<<<< HEAD
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TurnoRD - Gestiona tus turnos fácil</title>
-  <meta name="description" content="Gestiona turnos fácilmente con TurnoRD. Solución para barberías, salones, clínicas y más en República Dominicana.">
-  <meta name="keywords" content="turnos online, gestión de citas, sistema de turnos, agenda online, barberías, salones de belleza, clínicas, República Dominicana, TurnoRD">
-  
-  <!-- Favicons -->
+  <title>TurnoRD | Gestión de turnos inteligente</title>
+  <meta name="description" content="TurnoRD: La app de turnos para barberías, salones y clínicas en República Dominicana. Organiza citas, elimina filas y consigue más clientes.">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="imegenlogin/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="imegenlogin/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="imegenlogin/favicon-16x16.png">
   <link rel="manifest" href="imegenlogin/site.webmanifest">
   <link rel="shortcut icon" href="imegenlogin/favicon.ico">
-
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-  <!-- AOS Animate On Scroll -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- Datos estructurados de Schema.org para el logo -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "TurnoRD",
-    "url": "https://turnord.net",
-    "logo": "https://turnord.net/assets/logo.jpeg"
-  }
-  </script>
-
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- Header -->
+<body class="bg-gray-50 text-gray-800 font-sans">
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="index.html">
-        <img src="assets/logo.jpeg" alt="Logo de TurnoRD" class="h-12">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="assets/logo.jpeg" alt="TurnoRD" class="h-12">
+        <span class="sr-only">Inicio</span>
       </a>
-      <!-- Navegación para Escritorio -->
-      <nav class="hidden md:flex items-center space-x-4">
-        <a href="#beneficios" class="text-gray-700 hover:text-blue-600 transition">Beneficios</a>
-        <a href="negocios-afiliados.html" class="text-gray-700 hover:text-blue-600 transition">Negocios Afiliados</a>
-        <a href="panel-negocio.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Soy Negocio</a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#beneficios" class="text-gray-600 hover:text-blue-600 transition font-medium">
+          Beneficios
+        </a>
+        <a href="negocios-afiliados.html" class="text-gray-600 hover:text-blue-600 transition font-medium">
+          Negocios afiliados
+        </a>
+        <span class="w-px h-6 bg-gray-300"></span>
+        <a href="turno.html" class="text-blue-600 font-semibold hover:underline">
+          Tomar turno
+        </a>
+        <a href="panel-negocio.html"
+           class="bg-blue-600 text-white px-5 py-2 rounded-xl font-semibold hover:bg-blue-700 shadow transition">
+          Soy negocio
+        </a>
       </nav>
-      <!-- Botón de Menú para Móviles -->
       <div class="md:hidden">
         <button id="menu-button" class="text-gray-800 hover:text-blue-600 focus:outline-none">
           <i class="bi bi-list text-3xl"></i>
         </button>
       </div>
     </div>
-    <!-- Menú para Móviles -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
       <a href="#beneficios" class="block py-3 px-4 text-gray-700 hover:bg-gray-100">Beneficios</a>
       <a href="negocios-afiliados.html" class="block py-3 px-4 text-gray-700 hover:bg-gray-100">Negocios Afiliados</a>
@@ -64,376 +52,290 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-gradient-to-br from-brand via-blue-600 to-brand-dark relative overflow-hidden py-28 text-white" data-aos="fade-down">
-    <!-- Blobs decorativos -->
-    <div class="absolute -top-20 -left-20 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+  <!-- HERO -->
+  <section class="hero-3d bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600 relative overflow-hidden py-32 text-white" data-aos="fade-down">
+    <div class="absolute -top-20 -left-20 w-96 h-96 bg-blue-400 opacity-20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-800 opacity-20 rounded-full blur-3xl"></div>
 
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative z-10">
-      <!-- Columna de Texto -->
-      <div class="text-center md:text-left">
-        <h2 class="text-5xl font-extrabold mb-4 leading-tight">Organiza tus turnos sin estrés</h2>
-        <p class="mb-8 text-lg text-blue-100">TurnoRD te ayuda a gestionar clientes, reducir filas y mejorar tu atención al cliente de forma inteligente.</p>
-        <p class="mb-8 text-lg text-blue-100">
-          Ideal para barberías, salones y negocios en República Dominicana 🇩🇴
-        </p>
-        <a href="panel-negocio.html" class="btn-primary bg-white text-blue-600 font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-50 transition-transform transform hover:scale-105">Empieza Gratis – Sin Tarjeta</a>
-      </div>
-      <!-- Columna de Imagen y Animación -->
-      <div class="flex justify-center relative">
-        <img src="assets/hero-image.svg" alt="Ilustración de gestión de turnos" class="w-full max-w-md relative z-10">
-        
-        <!-- Animación de Turnos Fluyendo -->
-        <div class="absolute right-0 top-10 hidden md:flex flex-col gap-4 opacity-80 z-0">
-          <div class="turno-card bg-white/90 text-blue-800 p-3 rounded-lg shadow-lg w-40 text-sm backdrop-blur-sm" style="animation-delay: 0s;">
-            <div class="font-bold">Juan P.</div>
-            <div class="text-xs text-gray-500">Corte de pelo</div>
-            <div class="text-xs text-green-600 font-semibold">● Atendido</div>
-          </div>
-          <div class="turno-card bg-white/90 text-blue-800 p-3 rounded-lg shadow-lg w-40 text-sm backdrop-blur-sm" style="animation-delay: 2s;">
-            <div class="font-bold">Ana M.</div>
-            <div class="text-xs text-gray-500">Manicure</div>
-            <div class="text-xs text-yellow-600 font-semibold">● En espera</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cómo Funciona -->
-  <section id="como-funciona" class="py-28 bg-bg-soft relative overflow-hidden">
-    <!-- Decoración de fondo -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-30 pointer-events-none">
-        <div class="absolute top-10 left-10 w-64 h-64 bg-brand/5 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-10 right-10 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 relative z-10">
-      <div class="text-center mb-20">
-        <h2 class="text-4xl font-extrabold text-text-main">¿Cómo Funciona?</h2>
-        <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">En solo 3 simples pasos, transforma la gestión de tu negocio.</p>
-      </div>
-      
-      <div class="relative flex flex-col md:flex-row justify-center items-start md:space-x-8">
-        <!-- Línea de Conexión (Desktop) -->
-        <div class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand/20 to-transparent z-0"></div>
-
-        <!-- Paso 1 -->
-        <div data-aos="fade-right" class="relative z-10 flex flex-col items-center text-center max-w-sm mb-16 md:mb-0 group">
-          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-white shadow-xl mb-8 border-4 border-white ring-4 ring-brand/10 transition-transform duration-300 group-hover:scale-110 group-hover:ring-brand/30">
-            <span class="text-4xl font-extrabold text-brand">1</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-text-main group-hover:text-brand transition-colors">Regístrate</h3>
-          <p class="text-gray-600 px-4 leading-relaxed">Crea tu cuenta de negocio en minutos. Es rápido, fácil y <span class="text-brand font-semibold">completamente gratis</span> para empezar.</p>
-        </div>
-
-        <!-- Paso 2 -->
-        <div data-aos="fade-up" class="relative z-10 flex flex-col items-center text-center max-w-sm mb-16 md:mb-0 group">
-          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-white shadow-xl mb-8 border-4 border-white ring-4 ring-brand/10 transition-transform duration-300 group-hover:scale-110 group-hover:ring-brand/30">
-            <span class="text-4xl font-extrabold text-brand">2</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-text-main group-hover:text-brand transition-colors">Configura</h3>
-          <p class="text-gray-600 px-4 leading-relaxed">Personaliza tus servicios, horarios y personal. TurnoRD se adapta a <span class="text-brand font-semibold">tus reglas</span>.</p>
-        </div>
-
-        <!-- Paso 3 -->
-        <div data-aos="fade-left" class="relative z-10 flex flex-col items-center text-center max-w-sm group">
-          <div class="flex items-center justify-center h-24 w-24 rounded-full bg-brand shadow-xl shadow-brand/30 mb-8 border-4 border-white ring-4 ring-brand/20 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
-            <span class="text-4xl font-extrabold text-white">3</span>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-text-main group-hover:text-brand transition-colors">Comparte</h3>
-          <p class="text-gray-600 px-4 leading-relaxed">Comparte tu enlace único y observa cómo tu agenda se llena sola. <span class="text-brand font-semibold">¡Automatización total!</span></p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Beneficios -->
-  <section id="beneficios" class="py-28 bg-white relative">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-20">
-        <span class="text-brand font-bold tracking-wider uppercase text-sm mb-2 block">Ventajas Competitivas</span>
-        <h2 class="text-4xl font-extrabold text-text-main">¿Por qué elegir TurnoRD?</h2>
-        <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">Todo lo que necesitas para llevar tu negocio al siguiente nivel de profesionalismo.</p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-        <!-- Beneficio 1: Optimiza tu Tiempo -->
-        <div data-aos="fade-up" class="card-3d group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-brand/30">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand to-brand-dark rounded-t-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          
-          <div class="flex items-center justify-center h-20 w-20 rounded-2xl bg-brand/10 text-brand group-hover:bg-brand group-hover:text-white transition-colors duration-300 mx-auto mb-8">
-            <i class="bi bi-clock-history text-4xl icon-animate"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-center text-text-main">Optimiza tu Tiempo</h3>
-          <p class="text-gray-600 text-center leading-relaxed">Reduce el tiempo de espera y gestiona tu agenda de forma automática. Menos caos, más productividad.</p>
-        </div>
-
-        <!-- Beneficio 2: Mejora la Experiencia -->
-        <div data-aos="fade-up" data-aos-delay="150" class="card-3d group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-accent/30">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent to-green-600 rounded-t-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          
-          <div class="flex items-center justify-center h-20 w-20 rounded-2xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300 mx-auto mb-8">
-            <i class="bi bi-emoji-smile text-4xl icon-animate"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-center text-text-main">Experiencia Superior</h3>
-          <p class="text-gray-600 text-center leading-relaxed">Tus clientes amarán la facilidad de reservar y la puntualidad del servicio. ¡Fidelización garantizada!</p>
-        </div>
-
-        <!-- Beneficio 3: Crece tu Negocio -->
-        <div data-aos="fade-up" data-aos-delay="300" class="card-3d group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-warning/50">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-warning to-yellow-500 rounded-t-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          
-          <div class="flex items-center justify-center h-20 w-20 rounded-2xl bg-warning/10 text-yellow-600 group-hover:bg-warning group-hover:text-white transition-colors duration-300 mx-auto mb-8">
-            <i class="bi bi-graph-up-arrow text-4xl icon-animate"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4 text-center text-text-main">Analiza y Crece</h3>
-          <p class="text-gray-600 text-center leading-relaxed">Obtén datos clave sobre tus servicios y clientes para tomar decisiones inteligentes y expandir tu negocio.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ¿Para quién es TurnoRD? -->
-  <section class="py-28 bg-bg-soft">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-extrabold text-gray-900">¿Para quién es TurnoRD?</h2>
-        <p class="mt-4 text-lg text-gray-600">Nuestra plataforma se adapta a diversos tipos de negocios.</p>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <!-- Barberías -->
-        <div data-aos="fade-up" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-          <i class="bi bi-scissors text-5xl text-blue-600 mb-4"></i>
-          <h3 class="text-xl font-bold">Barberías</h3>
-        </div>
-        <!-- Salones de Belleza -->
-        <div data-aos="fade-up" data-aos-delay="100" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-          <i class="bi bi-magic text-5xl text-pink-500 mb-4"></i>
-          <h3 class="text-xl font-bold">Salones de Belleza</h3>
-        </div>
-        <!-- Clínicas -->
-        <div data-aos="fade-up" data-aos-delay="200" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-          <i class="bi bi-hospital text-5xl text-green-500 mb-4"></i>
-          <h3 class="text-xl font-bold">Clínicas</h3>
-        </div>
-        <!-- Centros de Uñas -->
-        <div data-aos="fade-up" data-aos-delay="300" class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-          <i class="bi bi-stars text-5xl text-purple-500 mb-4"></i>
-          <h3 class="text-xl font-bold">Centros de Uñas</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Final -->
-  <section class="bg-blue-700">
-    <div class="max-w-5xl mx-auto text-center py-20 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
-      <h2 class="text-4xl font-extrabold text-white sm:text-5xl">
-        <span class="block">Lleva tu negocio al siguiente nivel.</span>
-      </h2>
-      <p class="mt-4 text-lg leading-6 text-blue-100">
-        Únete a cientos de negocios que ya están optimizando su tiempo y mejorando la satisfacción de sus clientes.
+    <div class="relative max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+        Menos filas. Más clientes. <br class="hidden md:block" />
+        Turnos inteligentes para tu negocio
+      </h1>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-blue-100 font-light">
+        TurnoRD permite a barberías, salones y clínicas en República Dominicana
+        organizar citas sin caos, sin llamadas y sin esperas innecesarias.
       </p>
-      <a href="panel-negocio.html" class="btn-primary mt-8 w-full inline-flex items-center justify-center px-8 py-4 border border-transparent rounded-full shadow-lg text-lg font-bold text-blue-600 bg-white hover:bg-blue-50 sm:w-auto transition-transform transform hover:scale-105">
-        Empieza Gratis Hoy Mismo
-      </a>
+
+      <div class="flex justify-center gap-4">
+        <a href="turno.html" class="bg-white text-blue-900 font-bold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition hover:shadow-xl mockup-pulse">
+          Tomar turno
+        </a>
+        <a href="panel-negocio.html" class="border-2 border-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-900 transition">
+          Soy negocio
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-blue-200">
+        ✔ Sin costo para clientes · ✔ Fácil de usar · ✔ Soporte local
+      </p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-950 text-slate-300 relative overflow-hidden">
-    <!-- Decoración de fondo sutil -->
-    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand via-accent to-brand-dark"></div>
+  <!-- COMO FUNCIONA -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-16" data-aos="fade-up">¿Cómo funciona?</h2>
 
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-
-        <!-- Columna 1: Logo y Descripción -->
-        <div class="space-y-6">
-          <div class="flex items-center space-x-2">
-            <img src="assets/logo.jpeg" alt="Logo de TurnoRD" class="h-12 w-12 bg-white rounded-xl p-1 shadow-lg">
-            <span class="text-2xl font-bold text-white tracking-tight">TurnoRD</span>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition" data-aos="zoom-in">
+          <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="bi bi-shop"></i>
           </div>
-          <p class="text-slate-400 leading-relaxed text-sm">
-            La plataforma líder en República Dominicana para gestionar turnos y citas. Moderniza tu negocio hoy.
-          </p>
-          <div class="flex space-x-4 pt-2">
-            <!-- Redes Sociales con Hover Colors -->
-            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110">
-              <i class="bi bi-facebook text-xl"></i>
-            </a>
-            <a href="https://www.instagram.com/turnord_oficial?igsh=ZW5obHRidTZ3aDhs" target="_blank" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all duration-300 transform hover:scale-110">
-              <i class="bi bi-instagram text-xl"></i>
-            </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-sky-500 hover:text-white transition-all duration-300 transform hover:scale-110">
-              <i class="bi bi-twitter text-xl"></i>
-            </a>
+          <h3 class="text-xl font-semibold mb-3">1. Elige el negocio</h3>
+          <p>Selecciona barbería, salón, clínica o cualquier negocio afiliado.</p>
+        </div>
+        <div class="p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="bi bi-calendar-check"></i>
           </div>
+          <h3 class="text-xl font-semibold mb-3">2. Reserva tu turno</h3>
+          <p>Escoge fecha y hora sin llamadas ni filas.</p>
         </div>
-
-        <!-- Columna 2: Enlaces Rápidos -->
-        <div>
-          <h3 class="text-white font-bold text-lg mb-6 relative inline-block">
-            Explorar
-            <span class="absolute -bottom-2 left-0 w-8 h-1 bg-brand rounded-full"></span>
-          </h3>
-          <ul class="space-y-3 text-sm">
-            <li><a href="#beneficios" class="text-slate-400 hover:text-brand transition-colors flex items-center"><i class="bi bi-chevron-right text-xs mr-2 opacity-50"></i>Beneficios</a></li>
-            <li><a href="#como-funciona" class="text-slate-400 hover:text-brand transition-colors flex items-center"><i class="bi bi-chevron-right text-xs mr-2 opacity-50"></i>Cómo Funciona</a></li>
-            <li><a href="negocios-afiliados.html" class="text-slate-400 hover:text-brand transition-colors flex items-center"><i class="bi bi-chevron-right text-xs mr-2 opacity-50"></i>Negocios Afiliados</a></li>
-            <li><a href="panel-negocio.html" class="text-slate-400 hover:text-brand transition-colors flex items-center"><i class="bi bi-chevron-right text-xs mr-2 opacity-50"></i>Soy Negocio</a></li>
-          </ul>
+        <div class="p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="bi bi-clock-history"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">3. Llega a tiempo</h3>
+          <p>Recibe notificaciones y llega justo cuando te toca.</p>
         </div>
-
-        <!-- Columna 3: Legal -->
-        <div>
-          <h3 class="text-white font-bold text-lg mb-6 relative inline-block">
-            Legal
-            <span class="absolute -bottom-2 left-0 w-8 h-1 bg-accent rounded-full"></span>
-          </h3>
-          <ul class="space-y-3 text-sm">
-            <li><a href="#" class="text-slate-400 hover:text-brand transition-colors">Términos de Servicio</a></li>
-            <li><a href="#" class="text-slate-400 hover:text-brand transition-colors">Política de Privacidad</a></li>
-            <li><a href="#" class="text-slate-400 hover:text-brand transition-colors">Cookies</a></li>
-          </ul>
-        </div>
-
-        <!-- Columna 4: Contacto -->
-        <div>
-          <h3 class="text-white font-bold text-lg mb-6 relative inline-block">
-            Contacto
-            <span class="absolute -bottom-2 left-0 w-8 h-1 bg-warning rounded-full"></span>
-          </h3>
-          <ul class="space-y-4 text-sm">
-            <li class="flex items-start">
-              <i class="bi bi-geo-alt text-brand mt-1 mr-3"></i>
-              <span class="text-slate-400">República Dominicana 🇩🇴</span>
-            </li>
-            <li class="flex items-start">
-              <i class="bi bi-whatsapp text-accent mt-1 mr-3"></i>
-              <a href="https://wa.me/18497114807" target="_blank" class="text-slate-400 hover:text-white transition-colors">+1 (849) 711-4807</a>
-            </li>
-            <li class="flex items-start">
-              <i class="bi bi-envelope text-warning mt-1 mr-3"></i>
-              <a href="mailto:info@turnord.net" class="text-slate-400 hover:text-white transition-colors">info@turnord.net</a>
-            </li>
-          </ul>
-        </div>
-
       </div>
+    </div>
+  </section>
 
-      <div class="mt-16 border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-slate-500 text-sm text-center md:text-left">
-          &copy; 2025 <span class="text-white font-semibold">TurnoRD</span>. Todos los derechos reservados.
+  <!-- PANEL ADMINISTRATIVO -->
+  <section class="py-28 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-600 opacity-20 blur-3xl rounded-full"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+          Panel administrativo para tu negocio
+        </h2>
+        <p class="text-lg text-gray-300 mb-8">
+          Gestiona turnos, horarios, servicios y clientes desde un solo panel.
+          Control total de tu agenda en tiempo real.
         </p>
-        <div class="flex items-center space-x-2 text-sm text-slate-500">
-          <span>Desarrollado con</span>
-          <i class="bi bi-heart-fill text-red-500 animate-pulse"></i>
-          <span>por <a href="#" class="text-slate-400 hover:text-white transition-colors">Luis Alfredo Cabrera Reyes</a></span>
+
+        <ul class="space-y-4 text-gray-200">
+          <li>✔ Control de turnos en vivo</li>
+          <li>✔ Configuración de horarios y servicios</li>
+          <li>✔ Gestión de clientes</li>
+          <li>✔ Acceso seguro por negocio</li>
+        </ul>
+
+        <a href="panel-negocio.html"
+           class="inline-block mt-10 bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold shadow-lg transition mockup-pulse">
+          Ver panel del negocio
+        </a>
+      </div>
+
+      <div data-aos="fade-left" class="bg-gray-800 rounded-2xl p-6 shadow-2xl mockup-pulse">
+        <p class="text-sm text-gray-400">📊 Vista del panel</p>
+        <div class="mt-4 bg-gray-900 p-4 rounded-xl text-gray-300 space-y-2">
+          <div>Turnos activos: <span class="counter font-semibold text-blue-400" data-target="12">0</span></div>
+          <div>Clientes en espera: <span class="counter font-semibold text-yellow-400" data-target="4">0</span></div>
+          <div>Servicios hoy: <span class="counter font-semibold text-green-400" data-target="18">0</span></div>
+        </div>
+        <div class="mt-6 bg-gray-900 p-4 rounded-xl text-gray-300">
+          <div class="mx-auto w-40 h-80 bg-gray-800 rounded-2xl overflow-hidden shadow-lg">
+            <div class="h-8 bg-gray-700"></div>
+            <div class="p-3 space-y-3 text-sm">
+              <div class="bg-gray-700 rounded-lg h-6"></div>
+              <div class="bg-gray-700 rounded-lg h-6"></div>
+              <div class="bg-gray-700 rounded-lg h-6"></div>
+              <div class="bg-gray-700 rounded-lg h-6"></div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="py-24 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 id="beneficios" class="text-4xl font-bold mb-16" data-aos="fade-up">Beneficios</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-2xl shadow-xl hover:scale-105 transition border-t-4 border-blue-600" data-aos="flip-left">
+          <i class="bi bi-hourglass-split text-4xl text-blue-500 mb-4 block"></i>
+          <h3 class="text-xl font-semibold mb-3">Menos espera</h3>
+          <p>Optimiza el tiempo de clientes y empleados.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl hover:scale-105 transition border-t-4 border-green-600" data-aos="flip-left" data-aos-delay="100">
+          <i class="bi bi-journal-check text-4xl text-green-500 mb-4 block"></i>
+          <h3 class="text-xl font-semibold mb-3">Más organización</h3>
+          <p>Agenda clara, sin confusiones ni dobles turnos.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl hover:scale-105 transition border-t-4 border-purple-600" data-aos="flip-left" data-aos-delay="200">
+          <i class="bi bi-emoji-smile text-4xl text-purple-500 mb-4 block"></i>
+          <h3 class="text-xl font-semibold mb-3">Clientes felices</h3>
+          <p>Una experiencia moderna y profesional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIEN -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-16" data-aos="fade-up">¿Para quién es TurnoRD?</h2>
+
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="p-6 shadow-lg rounded-xl bg-white hover:shadow-2xl transition transform hover:-translate-y-1">
+          <i class="bi bi-scissors text-4xl text-gray-700 mb-3 block"></i>
+          <h3 class="font-bold text-lg">Barberías</h3>
+        </div>
+        <div class="p-6 shadow-lg rounded-xl bg-white hover:shadow-2xl transition transform hover:-translate-y-1">
+          <i class="bi bi-stars text-4xl text-pink-500 mb-3 block"></i>
+          <h3 class="font-bold text-lg">Salones de belleza</h3>
+        </div>
+        <div class="p-6 shadow-lg rounded-xl bg-white hover:shadow-2xl transition transform hover:-translate-y-1">
+          <i class="bi bi-hospital text-4xl text-blue-500 mb-3 block"></i>
+          <h3 class="font-bold text-lg">Clínicas</h3>
+        </div>
+        <div class="p-6 shadow-lg rounded-xl bg-white hover:shadow-2xl transition transform hover:-translate-y-1">
+          <i class="bi bi-gem text-4xl text-purple-500 mb-3 block"></i>
+          <h3 class="font-bold text-lg">Centros de uñas</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="py-20 bg-blue-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Hecho para negocios dominicanos</h2>
+      <p class="max-w-3xl mx-auto text-gray-600 mb-10">
+        TurnoRD está diseñado pensando en la realidad de los negocios locales:
+        horarios flexibles, alta demanda y clientes que no quieren esperar.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-8 text-blue-600 text-lg font-semibold">
+        <span>🇩🇴 República Dominicana</span>
+        <span>📱 100% digital</span>
+        <span>⚡ Implementación rápida</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12 text-left">
+      <!-- Brand -->
+      <div>
+        <div class="bg-white p-2 rounded-lg inline-block mb-4 shadow">
+          <img src="assets/logo.jpeg" alt="TurnoRD" class="h-12">
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          La plataforma líder en República Dominicana para gestionar turnos y citas sin complicaciones. Moderniza tu negocio hoy.
+        </p>
+      </div>
+      
+      <!-- Links -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-blue-400">Enlaces rápidos</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li><a href="#" class="hover:text-white transition flex items-center"><i class="bi bi-chevron-right text-xs mr-2"></i> Inicio</a></li>
+          <li><a href="#beneficios" class="hover:text-white transition flex items-center"><i class="bi bi-chevron-right text-xs mr-2"></i> Beneficios</a></li>
+          <li><a href="negocios-afiliados.html" class="hover:text-white transition flex items-center"><i class="bi bi-chevron-right text-xs mr-2"></i> Negocios Afiliados</a></li>
+          <li><a href="panel-negocio.html" class="hover:text-white transition flex items-center"><i class="bi bi-chevron-right text-xs mr-2"></i> Soy Negocio</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-blue-400">Contacto</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li class="flex items-start"><i class="bi bi-geo-alt-fill text-blue-500 mr-3 mt-1"></i> San Cristóbal, República Dominicana</li>
+          <li class="flex items-center"><i class="bi bi-envelope-fill text-blue-500 mr-3"></i> soporte@turnord.com</li>
+          <li class="flex items-center"><i class="bi bi-whatsapp text-green-500 mr-3"></i> +1 (849) 711-4807</li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-blue-400">Síguenos</h4>
+        <p class="text-gray-400 text-sm mb-4">Mantente al día con nuestras novedades.</p>
+        <div class="flex space-x-3">
+          <a href="https://www.instagram.com/turnord_oficial" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition text-white">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://wa.me/18497114807" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-500 transition text-white">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="mailto:turnord4@gmail.com" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition text-white">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8 text-center">
+      <p class="text-gray-500 text-sm">
+        © 2026 TurnoRD. Todos los derechos reservados.
+        <br class="md:hidden">Desarrollado por <strong class="text-gray-400">Luis Alfredo Cabrera Reyes</strong>.
+      </p>
     </div>
   </footer>
 
-  <!-- Botón flotante de WhatsApp -->
   <a href="https://wa.me/18497114807" class="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition" target="_blank" aria-label="WhatsApp">
     <i class="bi bi-whatsapp text-2xl"></i>
   </a>
 
-  <!-- Inicializar AOS y Parallax -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-
-    // Efecto Parallax 3D en Hero
-    document.addEventListener("mousemove", (e) => {
-      const img = document.querySelector(".hero-img");
-      if (img) {
-        const x = (window.innerWidth / 2 - e.pageX) / 30;
-        const y = (window.innerHeight / 2 - e.pageY) / 30;
-        img.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
-      }
-    });
   </script>
   <script src="header.js"></script>
-=======
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Bienvenido a TurnoRD</title>
-
-<!-- Base dinámico -->
-<script>
-  const isGitHub = location.hostname.includes('github.io');
-  const baseHref = isGitHub ? '/turnord-oficial/' : '';
-  const base = document.createElement('base');
-  base.href = baseHref;
-  document.head.appendChild(base);
-</script>
-
-<!-- Favicons -->
-<link rel="icon" type="image/x-icon" href="imegenlogin/favicon.ico" />
-<link rel="icon" type="image/png" sizes="16x16" href="imegenlogin/favicon-16x16.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="imegenlogin/favicon-32x32.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="imegenlogin/apple-touch-icon.png">
-<link rel="manifest" href="imegenlogin/site.webmanifest">
-
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = { darkMode: 'class', theme: { extend: {} } };
-</script>
-
-<!-- Inicializar modo oscuro -->
-<script>
-function inicializarModoOscuro() {
-  const modoOscuro = localStorage.getItem('modoOscuro') === 'true';
-  document.documentElement.classList.toggle('dark', modoOscuro);
-}
-inicializarModoOscuro();
-</script>
-
-</head>
-
-<body class="bg-blue-600 dark:bg-gray-900 text-white min-h-screen flex items-center justify-center px-4">
-
-  <!-- Botón modo oscuro -->
-  <button id="toggleDarkMode" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-    </svg>
-  </button>
-
-  <section class="text-center w-full max-w-md p-6 bg-blue-700 dark:bg-blue-800 rounded-xl shadow-xl">
-    <h1 class="text-3xl sm:text-4xl font-bold mb-4">¡Bienvenido a TurnoRD!</h1>
-    <p class="text-base sm:text-lg mb-2"><strong>Raudy Barbershop y Sport</strong></p>
-    <p class="text-base sm:text-lg mb-6">Gestiona tus turnos de manera fácil y rápida.</p>
-
-    <a href="usuario.html" class="bg-white dark:bg-gray-200 text-blue-900 dark:text-blue-800 font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-100 dark:hover:bg-gray-300 transition block w-full sm:w-auto mx-auto">
-      Ver turnos
-    </a>
-  </section>
-
-  <!-- Script modo oscuro -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleButton = document.getElementById('toggleDarkMode');
-      toggleButton.addEventListener('click', () => {
-        const isDarkMode = document.documentElement.classList.toggle('dark');
-        localStorage.setItem('modoOscuro', isDarkMode);
+    const hero = document.querySelector('.hero-3d');
+    document.addEventListener('mousemove', (e) => {
+      if (!hero) return;
+      const x = (window.innerWidth / 2 - e.pageX) / 40;
+      const y = (window.innerHeight / 2 - e.pageY) / 40;
+      hero.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+    });
+    const counters = document.querySelectorAll('.counter');
+    const animateCounters = () => {
+      counters.forEach((el) => {
+        const target = Number(el.getAttribute('data-target') || '0');
+        let start = 0;
+        const duration = 1500;
+        const step = Math.max(1, Math.ceil(target / (duration / 16)));
+        const tick = () => {
+          start += step;
+          if (start >= target) {
+            el.textContent = String(target);
+          } else {
+            el.textContent = String(start);
+            requestAnimationFrame(tick);
+          }
+        };
+        requestAnimationFrame(tick);
+      });
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.disconnect();
+        }
       });
     });
+    const panel = document.querySelector('.mockup-pulse');
+    if (panel) observer.observe(panel);
   </script>
 
->>>>>>> e3a407f0b638aedd0978abf9184e93abb877671e
 </body>
 </html>

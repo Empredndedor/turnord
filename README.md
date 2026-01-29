@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # turnord
 =======
 # Proyecto de Sistema de Turnos
@@ -17,3 +18,6 @@ La aplicación se conecta a Supabase mediante las credenciales configuradas dire
 
 El proyecto incluye un script (`build.js`) para minificar y ofuscar el código JavaScript. Este paso es opcional pero se utiliza para preparar los archivos para un entorno de "producción". Se añadirá un script en `package.json` para facilitar la ejecución de este proceso.
 >>>>>>> e3a407f0b638aedd0978abf9184e93abb877671e
+=======
+# turnord
+>>>>>>> 955a64a851754cfd9cb0ed0aea92efba7a812b3d
