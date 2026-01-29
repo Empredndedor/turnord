@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+node_modules/
+test-results/
+verification/
+server.log
+=======
+# Archivos temporales
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencias
+node_modules/
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+>>>>>>> e3a407f0b638aedd0978abf9184e93abb877671e

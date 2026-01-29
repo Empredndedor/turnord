@@ -1,0 +1,39 @@
+{
+<<<<<<< HEAD
+  "name": "turnord",
+  "version": "1.0.0",
+  "description": "TurnoRD - Gestiona tus turnos fácil",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss input.css -o styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.44.0"
+=======
+  "name": "prueba.turno",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lit": "^3.3.0",
+    "@supabase/supabase-js": "^2.53.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.4"
+>>>>>>> e3a407f0b638aedd0978abf9184e93abb877671e
+  }
+}
